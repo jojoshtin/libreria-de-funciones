@@ -9,10 +9,10 @@ struct trabajador
     char f_ingreso[10];
 };
 int vectorindices[100];
-void indicesueldo(float sueldolocal,struct trabajador vector[],int tam,int vectorindices[]);
+int indicesueldo(float sueldolocal,struct trabajador vector[],int tam,int vectorindices[]);
 float sueldolocal;
 
-void indicesueldo(float sueldolocal,struct trabajador vector[],int tam,int vectorindices[]){
+int indicesueldo(float sueldolocal,struct trabajador vector[],int tam,int vectorindices[]){
     int i, j=0;
     for (i=0;i<tam;i++){
         if (vector[i].sueldo=sueldolocal){
@@ -20,4 +20,5 @@ void indicesueldo(float sueldolocal,struct trabajador vector[],int tam,int vecto
             j++;
         }
     }
+    return(j);
 }
