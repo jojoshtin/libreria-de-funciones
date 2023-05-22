@@ -31,7 +31,7 @@ void eliminar(struct trabajador lista[maximo], int *dimension){
                         printf("%i: %s\n", i+1, motivos[i]);
                     }
                     scanf("%i", &motivo); //PREGUNTAR MOTIVO DE LA ELIMINACION
-                }while(motivo<1 || motivo>5);
+                }while(motivo<1 || motivo>4);
                 //LEER FECHA DE ELIMINACION
                 verificacionfecha(&dd,&mm,&aa,"despido");
                 //AGREGAR A EXTRABAJADORES.TXT
